@@ -84,7 +84,7 @@ html, body {
 body {
     font: 14px/25px Arial, Helvetica, sans-serif;
     font-family: 'Teko', sans-serif;
-        background: linear-gradient(#131313, #fff);
+        background: #131313;
         font-size: 19px;
         line-height: 1.6em;
         letter-spacing: .2px;
