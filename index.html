@@ -198,29 +198,17 @@
 
     <nav>
         <div class="settings" style="margin-right: 5px;">
-            <a href="search.php" style="align-items: center; display: flex" onclick="setPage('search.php')" class="<?php echo isset($_COOKIE['page']) && $_COOKIE['page'] === 'search.php' ? 'current' : ''; ?>">
-                <?php echo $languages[$currentLanguage]['search_label']; ?>&nbsp;
-                <img src="css/imgs/search.png" alt="" style="height: 20px; width: 20px;">
-            </a>
+            <a href="home.html"</a>
         </div>
-        <a href="univers.php"</a>
-
-        <a href="project_info.php"></a>
-
-        <a href="participation_order.php"></a>
-
-        <a href="methodological_materials.php"></a>
-
-        <a href="faq.php"></a>
-
-        <a href="support.php"></a>
-
-        <a href="announcements.php" onclick="setPage('announcements.php')" class="<?php echo isset($_COOKIE['page']) && $_COOKIE['page'] === 'announcements.php' ? 'current' : ''; ?>"><?php echo $languages[$currentLanguage]['announce_label']; ?></a>
+        
+        <a href="about.html"></a>
+        <a href="exp.html">Опыт</a>
+        <a href="threed.html">3D модели</a>
+        <a href="arts.php">Арты</a>
+        <a href="faq.html">Контактные данные</a>
 
         <div class="settings" style="margin-left: 5px;">
-            <a href="options.php" style="align-items: center; display: flex" onclick="setPage('options.php')" class="<?php echo isset($_COOKIE['page']) && $_COOKIE['page'] === 'options.php' ? 'current' : ''; ?>">
-                <?php echo $languages[$currentLanguage]['options_label']; ?>&nbsp;
-                <img src="css/imgs/settings.png" alt="" style="height: 20px; width: 20px;">
+            <a href="about.html">Обо мне</a>
             </a>
         </div>
     </nav>
