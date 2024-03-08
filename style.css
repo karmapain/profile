@@ -1,155 +1,118 @@
-html,
-body {
-    margin: 0;
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-}
 
+/* Ваши стили CSS здесь */
 body {
-    min-width: 430px;
-    max-width: 1000px;
-    border: 2px dashed #c7e4ff;
+    background: url("src/bkg_knb.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    background-color: #4C8891;
+    color: white;
+    width: 100%;
+    display: column;
+      overflow-x: hidden;
+
+}
+h2{
+    text-align: center;
+}
+li{
+    list-style-type: none;
+    margin: 15px;
+
+}
+li:nth-child(odd) {
+      background-color: #9991; /* Фоновый цвет для четных элементов списка */
+    }
+.content {
+    width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
-html::before,
-body::before,
-header::before,
-footer::before,
-main::before {
-    color: #7fc1ff;
+/* Контейнер вокруг основного контента */
+.container {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    color: white;
+    background-color: #283544;
+    border-radius: 15px;
+    min-height: 25rem;
+    min-width: 70%;
+    border: 1px solid white;
+}
+.container_center {
+    max-width: 90%;
+    position: center;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid #4C8891;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: black;
 }
 
-main,
-header,
-footer {
-    background-color: #f3faff;
-    border: 2px solid #007bff;
-}
-
-nav,
-section,
-article,
-aside {
-    background-color: #f9f7ff;
-    border: 2px solid #9779ec;
-}
-
-nav::before,
-section::before,
-article::before,
-aside::before {
-    color: #9779ec;
-}
-
-h1 {
-    font-size: 18px;
-    background-color: #ffffff;
-    border: 2px solid #4dbb5f;
-}
-
-h1::before {
-    content: "h1";
-    color: #4dbb5f;
-}
-
-p {
-    background-color: #ffffff;
-    border: 2px solid #e83e8c;
-}
-
-p::before {
-    content: "p";
-    color: #e83e8c;
-}
-
-* {
-    position: relative;
-    padding: 25px 25px 20px;
-    margin: 0;
+      /* План конспект */
+       .button_word_all{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            border: 1px solid white;
+            padding: 5px;
+            border-radius: 4px;
+        }
+       .button_word{
+            color: black;
+            text-decoration: none;
+            padding: 8px;
+            margin: 5px;
+            display: flex;
+            position: relative;
+            border-radius: 4px;
+            z-index: 1;
+            background-color: white;
+            border: 1px solid black;
+        }
+        .button_word:hover{
+            border: 1px solid white;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        }
+        .tema-panel {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            position: relative;
+            z-index: 1;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        .tema-panel:hover {
+            border: 1px solid white;
+            background: rgba(255, 255, 255, 0.3);
+        }
+/* BUTTONS */
+  .btn {
     border-radius: 4px;
-}
-
-*:not(:last-child) {
-    margin-bottom: 20px;
-}
-
-*::before {
-    position: absolute;
-    top: 8px;
-    left: 10px;
-    font-weight: 700;
-    font-size: 11px;
-    line-height: 10px;
-    letter-spacing: 0.04em;
-}
-
-html::before {
-    content: "html";
-}
-
-body::before {
-    content: "body";
-}
-
-main::before {
-    content: "main";
-}
-
-header::before {
-    content: "header";
-}
-
-footer::before {
-    content: "footer";
-}
-
-section::before {
-    content: "section";
-}
-
-article::before {
-    content: "article";
-}
-
-aside::before {
-    content: "aside";
-}
-
-nav::before {
-    content: "nav";
-}
-
-/* layout */
-
-body {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-gap: 20px;
-}
-
-body header{
-  grid-column: 1/4;
-  grid-row: 1;
-}
-
-body nav{
-  grid-column: 1;
-  grid-row: 2;
-}
-
-section{
-  grid-column: 2;
-  grid-row: 2;
-}
-
-body aside{
-  grid-column: 3;
-  grid-row: 2;
-}
-
-body footer{
-  grid-column: 1/4;
-  grid-row: 3;
-}
+    color: white;
+    width: 10%;
+    position: relative; /* Добавим position: relative; */
+    height: 40px; /* Высота поля ввода */
+    padding: 0 10px; /* Внутренний отступ слева и справа */
+    border: 1px solid white; /* Обводка */
+    background-color: transparent;
+    outline: none; /* Убираем контур при фокусе */
+    font-size: 14px;
+  }
+  .btn:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
