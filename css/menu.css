@@ -381,3 +381,7 @@
 	background: #131313;
   }
 }
+  #cssmenu ul li.active > a {
+    background-color: #000;
+    color: #fff;
+  }
