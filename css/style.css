@@ -204,9 +204,21 @@ footer .bottom-social i.fa{font-size: 24px;margin-right: 12px;}
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Button--------------------------------- */
 /* ---------------------------------------------------------------------------- */
-.button{cursor: pointer;font-size: 13px;border:1px solid #ffffff;display: inline-block;text-decoration: none;margin: 5px 0;color: #fff;padding: 10px 15px;-webkit-transition: all .35s;-moz-transition: all .35s;transition: all .35s;
+.button{
+    border: 1px solid #6f0d15;
+    cursor: pointer;
+    font-size: 13px;
+    border:1px solid #ffffff;
+    display: inline-block;
+    text-decoration: none;margin: 5px 0;
+    color: #fff;padding: 10px 15px;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;transition: all .35s;
 }
-.button:hover{text-decoration: none; background: #303030;}
+.button:hover{
+    text-decoration: none;
+     background: #303030;
+ }
 
 .button.bt1 {background: #ec495e;color: #ffffff;padding: 10px 30px;text-align: center;border:2px solid #ec495e;font-weight: bold; font-size: 15px;border-radius: 5px;}
 .button.bt1:hover{background: transparent;color: #ec495e;}
