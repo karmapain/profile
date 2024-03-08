@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,7 +13,7 @@ body {
 	min-height: 100vh;
 	background: #000;
 }
-.container_oc {
+.container {
 	position: relative;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
