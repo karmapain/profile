@@ -13,7 +13,7 @@ body {
 	min-height: 100vh;
 	background: #000;
 }
-.container {
+.oc_container {
 	position: relative;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -23,7 +23,7 @@ body {
 	transition: all 400ms;
 }
 
-.container:hover .box {
+.oc_container:hover .box {
 	filter: grayscale(100%) opacity(24%);
 }
 
@@ -37,27 +37,27 @@ body {
 	align-items: center;
 }
 
-.container .box:hover {
+.oc_container .box:hover {
 	filter: grayscale(0%) opacity(100%);
 }
 
-.container:has(.box-1:hover) {
+.oc_container:has(.box-1:hover) {
 	grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
 }
 
-.container:has(.box-2:hover) {
+.oc_container:has(.box-2:hover) {
 	grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
 }
 
-.container:has(.box-3:hover) {
+.oc_container:has(.box-3:hover) {
 	grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
 }
 
-.container:has(.box-4:hover) {
+.oc_container:has(.box-4:hover) {
 	grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
 }
 
-.container:has(.box-5:hover) {
+.oc_container:has(.box-5:hover) {
 	grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
 }
 
