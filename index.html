@@ -1,6 +1,138 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Срочник 2.0</title>
     <link rel="stylesheet" href="style.css">
-<style>
+    <link rel="icon" href="/src/site.ico" type="image/x-icon">
+    <style>
+        /* Стили для текстовых полей ввода */
+        .search-input {
+          position: relative; /* Добавим position: relative; */
+          height: 40px; /* Высота поля ввода */
+          padding: 0 10px; /* Внутренний отступ слева и справа */
+          margin-bottom: 10px; /* Внешний отступ снизу */
+          border: 1px solid black; /* Обводка */
+          outline: none; /* Убираем контур при фокусе */
+          font-size: 14px;
+        }
+        /* Стили для кнопки "Поиск" */
+        .search-button {
+          font-size: 14px;
+          height: 40px; /* Высота кнопки */
+          margin-top: 10px; /* Внешний отступ сверху */
+          text-decoration: none;
+          text-transform: uppercase;
+          border: none;
+          outline: none;
+          text-align: center;
+          border: 1px solid black;
+          color: white;
+          background-color: tomato;
+          cursor: pointer;
+        }
+
+        .search-button:hover {
+          background-color: black;
+        }
+
+        /* Добавленные стили для результатов поиска */
+        .user-panel {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            margin-top: 2px;
+            display: block;
+            position: relative;
+            z-index: 1;
+            background-color: white;
+            border: 1px solid black;
+        }
+        .user-panel:hover {
+            outline: 3px solid black;
+            border-radius: 2px; /* Заменил outline-radius на border-radius */
+            background-color: #bbb;
+            /*background: rgba(255, 255, 255, 0.3);*/
+        }
+
+
+
+        .container_search{
+            /*background-color: #20304099;*/
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        /* Стили для текстовых полей ввода */
+        .search-input {
+          position: relative;
+          height: 40px;
+          padding: 0 10px;
+          margin-bottom: 10px;
+          border: 1px solid black;
+          outline: none;
+          font-size: 14px;
+        }
+
+        /* Стили для кнопки "Поиск" */
+        .search-button {
+          font-size: 14px;
+          height: 40px;
+          margin-top: 10px;
+          text-decoration: none;
+          text-transform: uppercase;
+          border: none;
+          outline: none;
+          text-align: center;
+          padding: 12px;
+          color: white;
+          background-color: tomato;
+          border: 1px solid black;
+          cursor: pointer;
+        }
+
+        .search-button:hover {
+          background-color: black;
+        }
+
+        .rating {
+            background-color: #29354d50;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            padding: 0.3rem;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 7px;
+        }
+
+        .sort {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.4);
+            height: 1.2rem;
+            width: 14rem;
+            border: 1px solid rgba(0, 0, 0, 0.7);
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 20px;
+            padding: 2px 6px 5px;
+            border-radius: 4px;
+        }
+
+        .sort:hover {
+            background-color: #293540;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .count {
+            width: 20px;
+            display: inline-block;
+        }
+
+        #main {
+          background-color: transparent; /* Изначально прозрачный фон */
+        }
+
     header {
         background-color: #FFD764;
         color: #fff;
@@ -66,116 +198,6 @@
         background-color: transparent;
     }
 
-    #session {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        display: flex;
-        width: 25%;
-    }
-
-    #session #timer_button {
-        margin: 15px;
-        height: 100%;
-        width: 30%;
-        background-color: #29354d55;
-        color: #fffc;
-        border: 1px solid #fffc;
-        padding: 10px 5px;
-        cursor: pointer;
-        transition: background-color 3s ease;
-    }
-
-    #session #timer_button {
-        /* Добавьте начальное значение для opacity */
-        opacity: 1;
-        transition: opacity 3s ease; /* Плавная анимация для opacity */
-    }
-
-    #session:hover #timer_button {
-        opacity: 1;
-        transition: opacity 3s ease;
-    }
-
-    /* Анимация появления */
-    @keyframes fadeIn {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-
-    /* Применяем анимацию только к видимой кнопке */
-    #session #timer_button:not(:hover) {
-        animation: fadeIn 1s 7s forwards; /* Запускаем анимацию fadeIn через 3 секунды и удерживаем конечное значение opacity */
-    }
-
-    #session #timer_button:hover {
-        opacity: 1;
-        transition: opacity 3s ease;
-    }
-
-    #timer_button.button_hover {
-        opacity: 1;
-    }
-
-    #language-btns {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-    }
-
-    #language-btns button {
-        margin-right: 5px;
-        background-color: #29354d;
-        color: #fff;
-        border: 1px solid #fff;
-        padding: 10px 15px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    #language-btns button:hover {
-        background-color: #4C8891cc;
-        color: #fff;
-        border: 1px solid #29354d;
-    }
-
-    #language-btns button.active,
-    #language-btns button:active {
-        color: #fff;
-        border: 1px solid #29354d;
-        background-color: #4C8891cc;
-    }
-
-    #language-btns button.active:hover,
-    #language-btns button:active:hover {
-        color: #29354d;
-        border: 1px solid #29354d;
-        background-color: #4C8891cc;
-    }
-
-    /* Новые стили для картинки в settings */
-    .settings {
-        display: inline-block; /* Добавляем этот стиль для размещения картинки в ряд с текстом */
-        vertical-align: middle; /* Выравниваем вертикально относительно центра блока nav */
-    }
-
-    .settings img {
-        width: 20px; /* Устанавливаем желаемую ширину картинки */
-    }
-
-    @keyframes blink {
-        0%, 100% {
-            border-color: red; /* Цвет бордера на половине времени анимации */
-        }
-        50% {
-            border-color: transparent; /* Начальный и конечный цвет бордера */
-        }
-    }
-
     .connect_notification {
         background-color: #252;
         border: 1px solid #ddd;
@@ -195,11 +217,7 @@
         font-size: 16px;
     }
 </style>
-    
-<head>    
-    
-</head>
-    
+
 <header>
 
     <nav>
@@ -224,10 +242,15 @@
         <button if="ru" onclick="changeLanguage('ru')">RU</button>
     </div>
 </header>
+
+</head>
     
-<body>
-    
+<body class='body'>
+    <main id="main">
+
+      
+
+    </main>
 </body>
-
-
+    
 </html>
