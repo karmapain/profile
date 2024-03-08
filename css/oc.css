@@ -19,6 +19,7 @@ body {
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	gap: 1em;
 	width: 800px;
+	margin: auto;
 	height: 500px;
 	transition: all 400ms;
 }
