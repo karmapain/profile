@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Figtree", sans-serif;
+}
 
+body {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	background: #000;
+}
 .container_oc {
 	position: relative;
 	display: grid;
