@@ -107,7 +107,7 @@ span a {
     position: relative;
     display: inline-block;
     padding: 10px;
-    margin: 5px;
+    margin-bottom: 20px;
     color: rgba(255, 30, 30, 1.0);
     text-decoration: none;
     text-transform: uppercase;
