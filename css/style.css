@@ -61,7 +61,7 @@ span a {
 	padding: 2rem;
 	width: fit-content;
 	margin: auto;
-	padding: 40px;
+	padding: 30px;
 	border-radius: 5px;
 	box-shadow: 0 5px 15px 0px rgba(250, 30, 30, 0.5);
 }
@@ -72,14 +72,13 @@ span a {
 	border: 1px solid rgba(250, 30, 30, 1);
 	border-radius: 50%;
 	overflow: hidden;
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,1);
+	box-shadow: 0 5px 15px 0px rgba(250, 30, 30, 0.5);
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
 	img { width: 100%; height: auto; }
 }
 
 .content {
-
 	width: 100%;
 	max-width: 600px;
 	padding: 20px 40px;
