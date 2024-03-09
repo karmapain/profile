@@ -118,7 +118,7 @@ span a {
 }
 .social-links a:hover{
     background: rgba(180, 5, 5, 1.0);
-    color: black;
+    color: white;
 	box-shadow: 0 5px 15px 0px rgba(250, 30, 30, 0.5);
      -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
