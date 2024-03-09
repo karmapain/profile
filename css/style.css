@@ -119,5 +119,5 @@ span a {
   	background:rgba(255,255,255,.1);
     color: white;
 	box-shadow: 0 5px 5px 0px rgba(250, 30, 30, 0.5);
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0001);
 }
