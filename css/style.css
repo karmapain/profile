@@ -120,8 +120,8 @@ span a {
     background: rgba(200, 5, 5, 1.0);
     color: #050801;
     box-shadow: 0 0 5px rgba(200, 5, 5, 1.0),
-                0 0 25px rgba(200, 5, 5, 1.0),
-                0 0 50px rgba(200, 5, 5, 1.0),
-                0 0 200px rgba(200, 5, 5, 1.0);
+                0 0 25px rgba(200, 5, 5, 0.8),
+                0 0 50px rgba(200, 5, 5, 0.6),
+                0 0 200px rgba(200, 5, 5, 0.2);
      -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
