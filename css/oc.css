@@ -25,8 +25,6 @@
 }
 
 .box {
-	bordre-top: 1px solid rgba(250, 55, 55, 1);
-	border-bottom: 1px solid rgba(250, 55, 55, 1);
 	position: relative;
 	background: var(--img) center center;
 	background-size: cover;
