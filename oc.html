@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Karma's Portfolio</title>
+
+			<!---///////// STYLE /////////--->
+<link rel="stylesheet" href="css/oc.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/header.css">
+
+</head>
+	<header>
+			<section>
+			  <nav>
+			    <div></div>
+			    <ul>
+			      <a href="index.html"><li data-xcoord="0px">Home</li></a>
+			      <li data-xcoord="160px">About</li>
+			      <li data-xcoord="320px">Contact</li>
+			      <li data-xcoord="480px">Works</li>
+			      <a href="oc.html"><li class="active" data-xcoord="640px">My OC</li></a>
+			    </ul>
+			  </nav>
+			</section>
+	</header>
+
+	<script>
+		$("nav ul li").click(function(){
+		  var xcoord = $(this).data("xcoord");
+
+		  $("nav div").stop().animate({marginLeft:xcoord}, 500, "easeInOutExpo");
+		  $(this).addClass("active");
+		  $("nav ul li").not(this).removeClass("active");
+
+		});
+	</script>
+<body>
+	<div class="oc">
+		<div class="container_oc">
+			<div class="box box-1" style="--img: url(https://sun9-17.userapi.com/impg/4Du6alWEnxKcw1AkxDq0cyFcHV5iSrHGc38Tyw/jmlFHcEyJ5g.jpg?size=1240x1754&quality=96&sign=01a5712396df356b96fc23bda346eb46&type=album);" data-text="###"></div>
+			<div class="box box-2" style="--img: url(https://sun9-17.userapi.com/impg/4Du6alWEnxKcw1AkxDq0cyFcHV5iSrHGc38Tyw/jmlFHcEyJ5g.jpg?size=1240x1754&quality=96&sign=01a5712396df356b96fc23bda346eb46&type=album);" data-text="###"></div>
+			<div class="box box-3" style="--img: url(https://sun9-17.userapi.com/impg/4Du6alWEnxKcw1AkxDq0cyFcHV5iSrHGc38Tyw/jmlFHcEyJ5g.jpg?size=1240x1754&quality=96&sign=01a5712396df356b96fc23bda346eb46&type=album);" data-text="###"></div>
+			<div class="box box-4" style="--img: url(https://sun9-17.userapi.com/impg/4Du6alWEnxKcw1AkxDq0cyFcHV5iSrHGc38Tyw/jmlFHcEyJ5g.jpg?size=1240x1754&quality=96&sign=01a5712396df356b96fc23bda346eb46&type=album);" data-text="###"></div>
+			<div class="box box-5" style="--img: url(https://sun9-17.userapi.com/impg/4Du6alWEnxKcw1AkxDq0cyFcHV5iSrHGc38Tyw/jmlFHcEyJ5g.jpg?size=1240x1754&quality=96&sign=01a5712396df356b96fc23bda346eb46&type=album);" data-text="###"></div>
+		</div>
+	</div>
+</body>
+</html>
+
