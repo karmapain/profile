@@ -16,7 +16,7 @@ h1 {
 }
 
 p {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: light;
 	color: #fff;
 }
@@ -61,16 +61,17 @@ span a {
 	width: fit-content;
 	margin: auto;
 	padding: 40px;
+	border-radius: 5px;
+	box-shadow: 0 5px 15px 0px rgba(250, 30, 30, 0.5);
 }
 .avatar {
 	width: 150px;
 	height: 150px;
 	box-sizing: border-box;
-	border: 4px solid rgba(250, 30, 30, 1);
+	border: 1px solid rgba(250, 30, 30, 1);
 	border-radius: 50%;
-	border-style: double;
 	overflow: hidden;
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,1);
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
 	img { width: 100%; height: auto; }
