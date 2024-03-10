@@ -7,7 +7,7 @@
 	font-family: "Figtree", sans-serif;
 	display: grid;
 	place-content: center;
-	min-height: 110vh;
+	min-height: 80vh;
 }
 
 .container_oc {
