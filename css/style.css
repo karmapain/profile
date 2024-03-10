@@ -14,7 +14,11 @@ h1 {
 	text-transform: uppercase;
 	color: #eeeeee;
 }
-
+h2{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
 p {
 	font-size: 14px;
 	font-weight: light;
