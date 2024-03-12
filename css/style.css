@@ -21,6 +21,8 @@ h2{
 }
 p {
 	font-size: 14px;
+	font-weight: light;
+	color: #fff;
 }
 
 span a {
@@ -116,6 +118,9 @@ span a {
     letter-spacing: 4px;
     overflow: hidden;
     border: 1px solid rgba(255, 55, 55, 1.0);
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
 }
 .btn a:hover{
   	background:rgba(255, 55, 55, 1.0);
