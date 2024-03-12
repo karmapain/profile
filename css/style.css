@@ -112,19 +112,16 @@ span a {
     width: 100%;
     position: relative;
     display: inline-block;
-}
-.btn:hover{
-  	background:rgba(255, 55, 55, 1.0);
-    color: white;
-	box-shadow: 0 0px 15px 0px rgba(250, 30, 30, 0.5);
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0001);
-}
-.btn a{
-
     color: rgba(255, 55, 55, 1.0);
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
+}
+.btn:hover{
+  	background:rgba(255, 55, 55, 1.0);
+    color: white;
+	box-shadow: 0 0px 15px 0px rgba(250, 30, 30, 0.5);
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0001);
 }
