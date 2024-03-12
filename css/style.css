@@ -106,19 +106,14 @@ span a {
 }
 		/* ///////// social ///////// */
 .btn{
-    border: 1px solid rgba(255, 55, 55, 1.0);
-    height: 50px;
-    margin-bottom: 25px;
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    color: rgba(255, 55, 55, 1.0);
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    overflow: hidden;
-}
+		margin: 5px;
+        max-width: 90%;
+        position: center;
+        color: white;
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid rgba(255, 55, 55, 1.0);
+    }
 .btn:hover{
   	background:rgba(255, 55, 55, 1.0);
     color: white;
