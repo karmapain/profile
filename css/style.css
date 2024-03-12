@@ -105,23 +105,26 @@ span a {
 	}
 }
 		/* ///////// social ///////// */
-.btn a{
-	width: 100%;
+.btn{
+    border: 1px solid rgba(255, 55, 55, 1.0);
+    height: 50px;
+    margin-bottom: 25px;
+    width: 100%;
     position: relative;
     display: inline-block;
-    padding: 10px;
-    margin-bottom: 25px;
+}
+.btn:hover{
+  	background:rgba(255, 55, 55, 1.0);
+    color: white;
+	box-shadow: 0 0px 15px 0px rgba(250, 30, 30, 0.5);
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0001);
+}
+.btn a{
+
     color: rgba(255, 55, 55, 1.0);
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-    border: 1px solid rgba(255, 55, 55, 1.0);
-}
-.btn a:hover{
-  	background:rgba(255, 55, 55, 1.0);
-    color: white;
-	box-shadow: 0 0px 15px 0px rgba(250, 30, 30, 0.5);
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0001);
 }
