@@ -109,7 +109,7 @@ span a {
 	width: 100%;
     position: relative;
     display: inline-block;
-    height: 40px;
+    padding: 5px 0;
     margin-bottom: 25px;
     color: rgba(255, 55, 55, 1.0);
     text-decoration: none;
@@ -118,9 +118,6 @@ span a {
     letter-spacing: 4px;
     overflow: hidden;
     border: 1px solid rgba(255, 55, 55, 1.0);
-    display: flex;
-    justify-content: center; /* Горизонтальное центрирование */
-    align-items: center; /* Вертикальное центрирование */
 }
 .btn a:hover{
   	background:rgba(255, 55, 55, 1.0);
