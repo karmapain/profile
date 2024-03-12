@@ -61,7 +61,7 @@ span a {
 	align-items: center;
 }
 .container_price{
-	min-width: 600px;
+	width: 600px;
 	border: 1px solid rgba(250, 30, 30, 1);
 	padding: 2rem;
 	width: fit-content;
