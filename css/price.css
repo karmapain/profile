@@ -34,6 +34,7 @@ a {
 }
 
 .pricing-table-title a {
+	color: rgba(250, 30, 30, 1);
 	font-size: 0.6em;
 }
 
@@ -69,7 +70,7 @@ a {
 
 .pricing-title {
 	color: #FFF;
-	background: #e95846;
+	background: rgba(250, 30, 30, 1);
 	padding: 20px 0;
 	font-size: 2em;
 	text-transform: uppercase;
