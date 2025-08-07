@@ -163,13 +163,13 @@ span a {
 }
 
 .fade-up {
-  animation: fadeInUp 1s ease-in-out;
+  animation: fadeInUp 3s ease-in-out;
 }
 
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
