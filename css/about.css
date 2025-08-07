@@ -1,0 +1,29 @@
+.about_content {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 4px solid rgba(255, 30, 30, 1);
+  background-color: #1a1a1a;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(250, 30, 30, 0.2);
+}
+
+.about_content h2 {
+  color: #ff3333;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about_content ul {
+  padding-left: 20px;
+  margin: 0;
+  list-style-type: "✦ ";
+}
+
+.about_content li {
+  color: #ddd;
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+}
