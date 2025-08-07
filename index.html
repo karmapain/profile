@@ -11,20 +11,7 @@
 <link rel="stylesheet" href="css/header.css">
 
 </head>
-	
-	<script>
-		$("nav ul li").click(function(){
-		  var xcoord = $(this).data("xcoord");
-
-		  $("nav div").stop().animate({marginLeft:xcoord}, 500, "easeInOutExpo");
-		  $(this).addClass("active");
-		  $("nav ul li").not(this).removeClass("active");
-
-		});
-	</script>
-<body>
-
-<header>
+	<header>
 			<section class="header">
 			  <nav>
 			    <div></div>
@@ -39,6 +26,18 @@
 			</section>
 	</header>
 
+	<script>
+		$("nav ul li").click(function(){
+		  var xcoord = $(this).data("xcoord");
+
+		  $("nav div").stop().animate({marginLeft:xcoord}, 500, "easeInOutExpo");
+		  $(this).addClass("active");
+		  $("nav ul li").not(this).removeClass("active");
+
+		});
+	</script>
+<body>
+
 <div class="container_price">
 	<div class="container" style="max-width: 600px;">
 			<div class="avatar">
@@ -46,7 +45,7 @@
 					<img src="images/avatar.jpg" alt="Skytsunami" />
 				</a>
 			</div>
-			<div class="content fade-in">
+			<div class="content">
 				<h1>Karma</h1>
 					<p>Follow me on:</p>
 						<p>
