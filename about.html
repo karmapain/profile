@@ -12,6 +12,20 @@
 <link rel="stylesheet" href="css/header.css">
 
 </head>
+	
+
+	<script>
+		$("nav ul li").click(function(){
+		  var xcoord = $(this).data("xcoord");
+
+		  $("nav div").stop().animate({marginLeft:xcoord}, 500, "easeInOutExpo");
+		  $(this).addClass("active");
+		  $("nav ul li").not(this).removeClass("active");
+
+		});
+	</script>
+<body>
+
 	<header>
 			<section class="header">
 			  <nav>
@@ -26,48 +40,35 @@
 			  </nav>
 			</section>
 	</header>
+	
+	<div class="container_price">
+		  <div class="about_content">
+			    <h2>What I Do</h2>
+				    <ul>
+					    <li>3D Modeling</li>
+					    <li>Animation</li>
+					    <li>VFX & Visual Effects</li>
+				    </ul>
+		  </div>
 
-	<script>
-		$("nav ul li").click(function(){
-		  var xcoord = $(this).data("xcoord");
+		  <div class="about_content">
+			    <h2>Software I Use</h2>
+				    <ul>
+					    <li>Clip Studio Paint</li>
+					    <li>Blender</li>
+					    <li>Sublime Text</li>
+				    </ul>
+		  </div>
 
-		  $("nav div").stop().animate({marginLeft:xcoord}, 500, "easeInOutExpo");
-		  $(this).addClass("active");
-		  $("nav ul li").not(this).removeClass("active");
+		  <div class="about_content">
+			    <h2>My PC Specs</h2>
+				    <ul>
+					    <li>MECHREVO Kuangshi X 16</li>
+					    <li>NVIDIA RTX 5060</li>
+					    <li>Intel Core i5-13500</li>
+				    </ul>
+		  </div>
+	</div>
 
-		});
-	</script>
-<body>
-		<div class="container_price">
-			<div class="about_content">
-				<h2></h2>
-				<p>  </p>
-				<p>  </p>
-				<!---
-					3D modeling,
-					animation,
-					VFX effects
-				--->
-			</div>
-			<div class="about_content">
-				<h2>Software:</h2>
-				<p> Clip Studio Paint</p>
-				<p> Blender </p>
-				<p> Sublime Text </p>
-				<!---
-					***
-				--->
-			</div>
-			<div class="about_content">
-				<h2> My PC:  </h2>
-				<p> MECHREVO Kuangshi X 16 </p>
-				<p> RTX 5060</p>
-				<p> Intel Core I5-13500</p>
-				<p>
-				<!---
-					***
-				--->
-			</div>
-		</div>
 </body>
 </html>
